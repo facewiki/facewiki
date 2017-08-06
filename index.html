@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FaceWiKi</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />      
+    <!-- =======================================================
+        Theme Name: Company
+        Theme URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+        Author: BootstrapMade
+        Author URL: https://bootstrapmade.com
+    ======================================================= -->
+  </head>
+
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('images/background2.jpeg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: BLACK;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+input {
+  display: block;
+}
+
+/* Name */
+input[type="text"] {
+ 
+}
+
+/* email */
+input[type="email"] {
+  background: transparent;
+  color: white;
+}
+input[type="text"] {
+  background: transparent;
+  color: white;
+}
+.our-team {
+    padding:50px;
+    background:#ddd;
+}
+
+.our-team h3 {
+    margin-bottom:30px;
+    font-weight:800;
+}
+
+.our-team h4 {
+    margin-top:20px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.our-team img{
+    border-radius:6px;
+    margin-top:30px;
+}
+</style>
+<body>
+
+<div class="bgimg">
+ <div class="container">
+ 
+   &nbsp;&nbsp;&nbsp; <h1 style="color:cyan" ><B>FACE<f style="color: blue">WiKi</f></B></h1>
+  </div>
+  <div class="middle">
+    <h1><b>Write the Story of Your Life</b></h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+   <h2 style="color: white">Get notified.</h2>
+<form action="//formspree.io/yourmailid" method="POST">
+  
+  
+<!-- Hidden Fields -->
+  <input type="hidden" name="_next" value="https://codepen.io/kdony1/pen/EjmqxQ" />
+
+    <input type="text" name="name"
+           placeholder="Your name">
+  
+    <input type="email" name="_replyto"
+           placeholder="Your email">
+  
+    <input type="submit" value="Send">
+
+  
+</form>
+  </div>
+</div>
+</div>
+<div class="our-team">
+        <div class="container">
+                
+            <div class="text-center">
+                <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    
+                    <h4>What is facewiki?</h4>
+                    <p>Facewiki is an open wiki for everyone and everything, Where you can create your own wiki page and ask anyone to write about you.</p>
+                </div>
+                <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            
+                    <h4>Why to use facewiki?</h4>
+                    <p>Wiki allows you to create your own page for anything as long as it makes sense. We are on a mission to create wiki which can be used to create pages without restrictions. </p>
+                </div>
+                <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    
+                    <h4>Vision</h4>
+                    <p>We want to create a centralised system for all kind of information which will be helpful to access from anywhere by anyone.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Get notified">
+        <div class="container">
+
+                <   
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("aug 15, 2017 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>  
+    <script src="js/wow.min.js"></script>
+    <script src="js/functions.js"></script>
+    
+</body>
+</html>
+
+</body>
+</html>
